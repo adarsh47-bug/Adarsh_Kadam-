@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@400;600;700&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script>
+        const changeButton = document.getElementById("changeButton");
+        const heading = document.querySelector("h1");
+
+        changeButton.addEventListener("click", function () {
+            heading.classList.toggle("button-clicked");
+        });
+
+
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;600;700&family=Ubuntu:wght@300&family=Ysabeau+Office:wght@200&family=Ysabeau+SC:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(7, 1, 20);
+            color: white;
+            /* font-family: 'Montserrat', sans-serif; */
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(47, 3, 45);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 2vw;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aqua;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(172, 130, 130);
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 5vw 0;
+            align-items: center;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .firstSection>div {
+            width: 35%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        /* .leftSection .btn {
+            padding: 10px;
+            background: #181418;
+            border-radius: 3px;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+            border: 2px solid white;
+        } */
+
+        .leftSection .btn {
+            /* padding: 10px; */
+            /* background: #181418; */
+            border-radius: 3px;
+            /* font-size: 20px; */
+            cursor: pointer;
+            /* color: white; */
+            border: 2px solid white;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(168, 137, 198);
+        }
+
+        #element {
+            color: rgb(168, 137, 198);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .x {
+            border: 0;
+            background: rgb(168, 137, 198);
+            height: 1px;
+            margin: 40px 84px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+            margin-bottom: 79px;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondSection .box {
+            background-color: aqua;
+            width: 70vw;
+            margin: 56px 0;
+            height: 2px;
+            display: flex;
+            /* margin-top: 20px; */
+        }
+
+        .secondSection .vertical {
+            width: 1px;
+            background-color: white;
+            height: 93px;
+            margin: 0 6vw;
+
+        }
+
+        .image-top {
+            /* width: 27px;
+            position: relative;
+            top: -30px;
+            left: -9px; */
+            width: 44px;
+            position: relative;
+            top: -52px;
+            left: -21px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: rgb(43, 4, 32);
+            fill-rule: unset;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            padding: 2vw 6vw 0vw;
+            align-items: center;
+        }
+
+        .footer ul {
+            display: flex;
+            list-style: none;
+            inline-size: auto;
+            margin-top: 1vw;
+            justify-content: center;
+        }
+
+        .footer-second ul li {
+            margin: 2vw;
+        }
+
+        /* .footer-second {
+            padding: 30px 400px;
+        } */
+
+
+        footer .footer-rights {
+            color: grey;
+            padding: 12px 0;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .footer ul li {
+            display: inline;
+        }
+
+        .footer-name {
+            color: rgb(127, 84, 93);
+            /* font-style: italic; */
+        }
+
+        @media screen and (max-width:730px) {
+            .footer ul li {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        @media screen and (max-width: 1400px) {
+
+            .secondSection .vertical {
+                height: unset;
+            }
+
+            .box {
+                flex-direction: column;
+            }
+
+            .firstSection {
+                flex-direction: column-reverse;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 80px;
+            }
+
+            .secondSection .box {
+                width: 75vw;
+            }
+
+            .image-top {
+                width: 44px;
+                position: relative;
+                top: 137px;
+                left: 20px;
+            }
+
+            /* .firstSection>div {
+                width: 50%;
+
+
+            } */
+            .leftSection {
+                width: 90% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            .rightSection {
+                width: 72% !important;
+            }
+
+            .rightSection img {
+                width: 90%;
+                margin-bottom: 39px;
+            }
+
+            .secondSection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 230vh;
+            }
+
+        }
+
+        /* @media screen and (max-width:430px) {
+            .secondSection .vertical {
+
+                margin: 0 -10vw;
+
+            }
+        } */
+        .footer-second ul {
+            padding: 0 !important;
+        }
+
+        nav.navbar.navbar-expand-md.navbar-dark.bg-dark {
+            height: unset;
+            background-color: rgb(47, 3, 45) !important;
+
+
+        }
+
+        .button-clicked nav.navbar.navbar-expand-md.navbar-dark.bg-dark {
+            height: fit-content;
+        }
+
+        a.navbar-brand {
+            text-shadow: 3px 3px 5px black;
+            font-family: 'Ysabeau SC', sans-serif;
+        }
+
+        /* .gradient-text {
+            background: linear-gradient(to right, rgb(244, 242, 242), rgb(20, 190, 220));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        } */
+        .footer-first h3 {
+            font-family: 'Ysabeau SC', sans-serif;
+        }
+
+        /* @media screen and (max-width:320) {
+            .footer-first {
+                width: 240px !important;
+            }
+        } */
+
+        @media screen and (max-width:580px) {
+            .leftSection {
+                font-size: 2rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- <nav>
+            <div class="left">Adarsh's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Sub</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><span class="gradient-text">Adarsh's Portfolio</span></a>
+                <button id="changeButton" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div style="justify-content: flex-end;" class=" collapse navbar-collapse" id="navbarsExample04">
+                    <ul style="margin-right: 0px !important;" class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Projects</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+
+    <!-- <form role="search">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </form> -->
+
+
+    <main>
+        <section id="Home" class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="purple">Adarsh</span>
+                    <div>and I'm a passionate</div>
+                    <span id="element"></span>
+                </div>
+                <hr style="opacity: 0%; margin: 0px;">
+                <div class="button">
+                    <!-- <button class="btn">Resume</button>
+                    <button class="btn">Github</button> -->
+                    <button type="button" class="btn btn-outline-light">Resume</button>
+                    <button type="button" class="btn btn-outline-light">Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="Daco_6122373.png" alt="" srcset="">
+            </div>
+        </section>
+        <hr class="x">
+        <section id="Work" class="secondSection">
+            <span class="text-gray">What I have done so far.</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical"><img class="image-top" src="pngwing.com.png" alt="">
+                    <div class="vertical-title">HTML & CSS Developer</div>
+                    <div class="vertical-desc">Experienced programmer proficient in HTML and CSS. Skilled in creating
+                        visually appealing web pages, adhering to web standards, and ensuring compatibility across
+                        browsers. Strong understanding of layout, typography, and responsive design. Collaborative team
+                        member with a focus on user experience and accessibility.
+                    </div>
+                </div>
+                <div class="vertical"><img class="image-top" src="js.png" alt="">
+                    <div class="vertical-title">JavaScript</div>
+                    <div class="vertical-desc">I have a deep understanding of JavaScript, which is a versatile scripting
+                        language primarily used for web development. I have used JavaScript extensively to create
+                        interactive and dynamic features on websites, including form validation, DOM manipulation, and
+                        asynchronous data fetching. I am familiar with popular JavaScript frameworks and libraries such
+                        as jQuery, and I have worked with various APIs to integrate third-party services into web
+                        applications.</div>
+                </div>
+                <div class="vertical"><img class="image-top" src="react.png" alt="">
+                    <div class="vertical-title">React</div>
+                    <div class="vertical-desc">I have practical experience with React, a powerful JavaScript library for
+                        building user interfaces. I have developed single-page applications (SPAs) and complex web
+                        interfaces using React's component-based architecture. I am proficient in state management with
+                        React's built-in features like hooks and context. I have also worked with React Router for
+                        client-side routing and have utilized Redux for managing global state in larger applications.
+                    </div>
+                </div>
+                <div class="vertical"><img class="image-top" src="canva-256.png" alt="">
+                    <div class="vertical-title">Canva</div>
+                    <div class="vertical-desc">I have some experience with Canva, an online graphic design tool. While
+                        my expertise lies primarily in programming, I have used Canva to create visually appealing
+                        designs for social media posts, presentations, and basic marketing materials. I am familiar with
+                        Canva's features, including templates, image editing, and typography options.</div>
+                </div>
+                <div class="vertical"><img class="image-top" src="pngegg (2).png" alt="">
+                    <div class="vertical-title">Python</div>
+                    <div class="vertical-desc">I have intermediate-level experience in Python, a versatile and powerful
+                        programming language. I can write clean and efficient Python code for various purposes, such as
+                        web scraping, data analysis, automation, and building web applications using frameworks like
+                        Django or Flask. I am familiar with object-oriented programming (OOP) concepts and can leverage
+                        Python's extensive libraries and modules to solve complex problems.</div>
+                </div>
+                <!-- <div class="vertical"><img class="image-top" src="clipart2942875.png" alt="">
+                    <div class="vertical-title">Engineer</div>
+                    <div class="vertical-desc">I am a dedicated engineer and passionate student who possesses a strong
+                        affinity for programming and a relentless desire to explore emerging technologies. I thrive on
+                        challenges and derive great satisfaction from finding creative solutions to complex problems.
+                        Continuously expanding my knowledge and skill set, I remain up-to-date with the latest
+                        advancements in programming languages and frameworks. With a collaborative mindset and a
+                        penchant for innovation, I strive to make a meaningful contribution to the dynamic and
+                        ever-evolving field of programming.</div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer id="Contact">
+        <div class="footer">
+            <div class="footer-first">
+                <!-- 
+                <h3 style="text-shadow: 2px 2px .5px black;">Adarsh's</h3>
+                <span class="footer-name">
+                    <h3> Portfolio Website</h3>
+                </span> -->
+                <h3>
+                    <span style="text-shadow: 2px 2px .5px black;">Adarsh's</span>
+                    <span class="footer-name">Portfolio
+                        Website</span>
+                </h3>
+
+
+            </div>
+            <div class="footer-second">
+                <!-- <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>link</li>
+                    <li>Projects</li>
+                </ul> -->
+                <ul style="font-size: large;">
+                    <li style="margin: 2vw;"><a href="https://twitter.com/Adarshk5977"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #ffffff
+                                    }
+                                </style>
+                                <path
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                            </svg></a></li>
+                    <li style="margin: 2vw;"><a href="https://www.linkedin.com/in/adarsh-kadam-3aa5b7248"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #ffffff
+                                    }
+                                </style>
+                                <path
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                            </svg></a></li>
+                    <li style="margin: 2vw;"><a href="https://github.com/adarsh47-bug"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #ffffff
+                                    }
+                                </style>
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights"> &#169; www.adarshportfolio.com | All rights reserved 2023</div>
+    </footer>
+
+    <!-- scripts -->
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ["Python programmer", "Graphic Designer", "Web Designer", "Web Developer"],
+            typeSpeed: 60,
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const changeButton = document.getElementById("changeButton");
+        const heading = document.querySelector("h1");
+
+        changeButton.addEventListener("click", function () {
+            heading.classList.toggle("button-clicked");
+        });
+
+    </script>
+
+
+</body>
+
+</html>
